@@ -1,13 +1,29 @@
 <resources>
-  <string name="app_name">Stock Hawk</string>
+    <string name="app_name">Stock Hawk</string>
 
-  <string name="action_example">Example action</string>
+    <string name="action_example">Example action</string>
 
-  <string name="action_settings">Settings</string>
-  <string name="action_change_units">Change Units</string>
-  <string name="symbol_search">Symbol Search</string>
-  <string name="content_test">Search for a Stock Symbol</string>
-  <string name="input_hint">FB</string>
-  <string name="input_prefill"></string>
-  <string name="network_toast">Uh-oh! This app requires an internet connection</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_change_units">Change Units</string>
+    <string name="symbol_search">Symbol Search</string>
+    <string name="content_test">Search for a Stock Symbol</string>
+    <string name="input_hint" translatable="false">FB</string>
+    <string name="input_prefill"></string>
+    <string name="network_toast">Uh-oh! This app requires an internet connection</string>
+    <string name="add_item_not_found">"There is no data for "</string>
+
+
+    <!--Content descriptions-->
+    <string name="content_description_positive_button">OK button</string>
+    <string name="content_description_add_new_item_button">Add new item button</string>
+
+    <string name="change" translatable="false">(%s)</string>
+    <string name="currency_format" translatable="false">%s USD</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="viewpager_title_five_days">5 days</string>
+    <string name="viewpager_title_two_weeks">2 weeks</string>
+    <string name="viewpager_title_one_month">1 month</string>
+    <string name="no_data_loaded">No data loaded</string>
+    <string name="stock_is_already_saved">This stock is already saved!</string>
 </resources>

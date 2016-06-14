@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/detail_stock_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/abc_action_bar_content_inset_material"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="false">
+
+            <TextView
+                android:id="@+id/tm_name_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                tools:text="Apple" />
+
+            <TextView
+                android:id="@+id/bid_price_detail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left|bottom"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                tools:text="200 USD"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/percent_change_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingEnd="@dimen/abc_action_bar_content_inset_material"
+            android:paddingRight="@dimen/abc_action_bar_content_inset_material"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            tools:text="5%"
+            android:layout_marginBottom="@dimen/abc_action_bar_content_inset_material" />
+
+        <TextView
+            android:id="@+id/bid_price_change_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right"
+            android:layout_toLeftOf="@+id/percent_change_detail"
+            android:layout_toStartOf="@+id/percent_change_detail"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            tools:text="-2 usd"
+            android:layout_marginBottom="@dimen/abc_action_bar_content_inset_material" />
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="@dimen/abc_action_bar_content_inset_material"
+            android:paddingRight="@dimen/abc_action_bar_content_inset_material"
+            android:paddingTop="4dp">
+
+        </android.support.v4.view.PagerTabStrip>
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
